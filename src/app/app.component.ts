@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavbarItem } from './models/navbar-item';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  navbarItems: Array<NavbarItem> = [
+    { name: "Education", route: "education"},
+    { name: "Projects", route: "projects"},
+    { name: "Skills", route: "skills"},
+    { name: "Experience", route: "experience"}
+  ]
 }
