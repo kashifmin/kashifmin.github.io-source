@@ -1,3 +1,20 @@
-<p>
-  card works!
-</p>
+<div class="ui card">
+  <div class="image">
+    <img src="{{item.image}}">
+  </div>
+  <div class="content">
+    <a class="header">{{item.title}}</a>
+    <div class="meta">
+      <span class="date">{{item.date}}</span>
+    </div>
+    <div class="description">
+      {{ item.description }}
+    </div>
+  </div>
+  <div class="extra content">
+    <a href="{{item.link}}">
+      <i class="heart icon"></i>
+      More info
+    </a>
+  </div>
+</div>
