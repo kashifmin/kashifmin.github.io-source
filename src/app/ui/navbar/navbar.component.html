@@ -1,0 +1,8 @@
+<div class="ui menu">
+  <div class="header item">
+    Kashif Minhaj
+  </div>
+  <a class="item" *ngFor="let i of items" routerLink="/{{i.route}}" routerLinkActive="active">
+    {{i.name}}
+  </a>
+</div>
