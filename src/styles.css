@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+background:#ec6a38;
+    -webkit-animation:colour 20s linear infinite;
+    -moz-animation:colour 20s linear infinite;
+
+}
+@-webkit-keyframes colour{
+    0%{
+        background:#ec6a38
+    }
+
+    10% {
+        background:#ecbc38
+    }
+
+    20% {
+        background:#e0ec38
+    }
+
+    30% {
+        background:#62ec38
+    }
+
+    40% {
+        background:#38ec56
+    }
+
+    50% {
+        background:#38ecb0
+    }
+
+    60% {
+        background:#38b9ec
+    }
+
+    70% {
+        background:#3b38ec
+    }
+
+    80% {
+        background:#9b38ec
+    }
+
+    90% {
+        background:#ec38b6
+    }
+
+    100% {
+        background:#ec3838
+    }
+
+}
+
+@-moz-keyframes colour{
+    0%{
+        background:#ec6a38
+    }
+
+    10% {
+        background:#ecbc38
+    }
+
+    20% {
+        background:#e0ec38
+    }
+
+    30% {
+        background:#62ec38
+    }
+
+    40% {
+        background:#38ec56
+    }
+
+    50% {
+        background:#38ecb0
+    }
+
+    60% {
+        background:#38b9ec
+    }
+
+    70% {
+        background:#3b38ec
+    }
+
+    80% {
+        background:#9b38ec
+    }
+
+    90% {
+        background:#ec38b6
+    }
+
+    100% {
+        background:#ec3838
+    }
+}
