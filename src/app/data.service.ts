@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { ProjectItem } from './models/project-item';
 
 @Injectable()
 export class DataService {

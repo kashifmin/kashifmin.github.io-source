@@ -1,0 +1,13 @@
+.card {
+    width: 50%;
+    height: 75%;
+    position: absolute;
+}
+
+.card > .image {
+    height: 40%;
+}
+
+.image > img {
+    height: 100%;
+}
