@@ -8,6 +8,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
+import { CardComponent } from './ui/card/card.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/projects', pathMatch: 'full'},
@@ -24,7 +25,8 @@ const routes: Routes = [
     ExperienceComponent,
     EducationComponent,
     SkillsComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
