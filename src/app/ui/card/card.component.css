@@ -1,13 +1,14 @@
-.card {
-    width: 50%;
+.project-card {
+    width: 60%;
     height: 75%;
-    position: absolute;
+    margin-top: 30px;
 }
 
-.card > .image {
+/* .card > .image {
     height: 40%;
-}
+    position: absolute;
+} */
 
-.image > img {
+/* .image > img {
     height: 100%;
-}
+} */
