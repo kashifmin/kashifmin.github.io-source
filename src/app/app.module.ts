@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule
