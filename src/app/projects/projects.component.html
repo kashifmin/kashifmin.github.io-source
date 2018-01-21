@@ -1,1 +1,1 @@
-<app-card *ngFor="let p of projectItems" [item]="p"></app-card>
+<app-card *ngFor="let p of projectItems | async" [item]="p"></app-card>

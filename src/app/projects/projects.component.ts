@@ -1,6 +1,7 @@
 import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 import { ProjectItem } from '../models/project-item';
+import { Observable }  from 'rxjs/Observable';
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +11,7 @@ import { ProjectItem } from '../models/project-item';
 })
 export class ProjectsComponent implements OnInit {
 
-  projectItems: Array<ProjectItem>;
+  projectItems: Observable<Array<ProjectItem>>;
 
   constructor(private data: DataService) { }
 

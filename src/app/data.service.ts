@@ -1,31 +1,15 @@
 import { Injectable } from '@angular/core';
 import { ProjectItem } from './models/project-item';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class DataService {
 
-  constructor() { }
+  constructor(private afData: AngularFirestore) { }
 
-  getProjectItems() {
-    let projectItems: Array<ProjectItem> = [
-      {
-        title: "Placements App",
-        description: "An android app for dept of Placements at NMAMIT",
-        link: "http://github.com/kashifmin",
-        image: null,
-        date: "July 2016"
-      },
-      {
-        title: "AIDA - Artificially Intelligent Digital Assistant",
-        description: `A smart assistant and a platform that servers machine learning APIs for 
-        object recognition, automated text responses, voice control, action recognition, face recognition,
-        basic smart assistant actions etc`,
-        link: "http://github.com/kashifmin",
-        image: null,
-        date: "September 2017 - Ongoing"
-      }
-  ];
-    return projectItems;
+  getProjectItems(): Observable<Array<ProjectItem>> {
+    return this.afData.collection('projects').valueChanges() as Observable<Array<ProjectItem>>
   }
 
 }

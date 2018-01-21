@@ -1,6 +1,8 @@
+import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
+import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -9,6 +11,7 @@ import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
 import { CardComponent } from './ui/card/card.component';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 const routes: Routes = [
   { path: '', redirectTo: '/projects', pathMatch: 'full'},
@@ -30,7 +33,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent],
